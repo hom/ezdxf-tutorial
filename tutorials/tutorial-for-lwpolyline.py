@@ -39,9 +39,11 @@ doc.saveas('lwpolyline5.dxf')
 
 # lwpolyline 6
 
+'''
 doc = ezdxf.new('R2010')
 msp = doc.modelspace()
 msp.add_lwpolyline([(0, 0, 0), (10, 0, 1), (20, 0, 0)], format='xyb')
 msp.add_lwpolyline([(0, 10, 0), (10, 10, .5), (20, 10, 0)], format='xyb')
 
 doc.saveas("../output/lwpolyline6.dxf")
+'''
