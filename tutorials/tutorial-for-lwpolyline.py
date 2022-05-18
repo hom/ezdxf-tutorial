@@ -1,14 +1,12 @@
 import ezdxf
 
-doc = ezdxf.new('R2010')
+doc = ezdxf.readfile("../output/lwpolyline2.dxf")
 msp = doc.modelspace()
 
-points = [(0, 0), (3, 0), (6, 3), (6, 6)]
-msp.add_lwpolyline(points)
-
 line = msp.query("LWPOLYLINE").first
-print(line[0])
-if line is not None:
-    line.append_points([(8, 7), (10, 7)])
 
-doc.saveas("../output/lwpolyline.dxf")
+with line.points("xyseb") as points:
+    del points[-2:]
+    points.extend([(4, 7), (0, 7)])
+
+doc.saveas("../output/lwpolyline3.dxf")
