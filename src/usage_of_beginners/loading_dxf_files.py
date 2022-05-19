@@ -1,5 +1,5 @@
 import ezdxf
 
-doc = ezdxf.new(setup=True)
+doc = ezdxf.readfile('../example.dxf')
 
-doc.saveas('output/created.dxf')
+doc.saveas('../output/saved.dxf')
