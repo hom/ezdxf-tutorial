@@ -23,4 +23,4 @@ msp.add_circle(
 # mark center point of circle in WCS
 msp.add_point((0, 2, 2), dxfattribs={'color': 1})
 
-doc.saveas('../output/ocsucs_usage.dxf')
+doc.saveas('output/ocsucs_usage.dxf')

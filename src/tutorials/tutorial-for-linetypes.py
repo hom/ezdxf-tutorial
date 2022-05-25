@@ -70,4 +70,4 @@ doc.linetypes.add("GRENZE2",
     length= 1.45,  # required for complex line types
 )
 
-doc.saveas('../output/linetypes.dxf')
+doc.saveas('output/linetypes.dxf')

@@ -21,4 +21,4 @@ dim3 = msp.add_linear_dim(
 dim3.set_location(location=(-1, 1), leader=True, relative=False)
 dim3.render()
 
-doc.saveas('../../../../../output/location_relative_to_center_of_dimension_line.dxf')
+doc.saveas('output/location_relative_to_center_of_dimension_line.dxf')

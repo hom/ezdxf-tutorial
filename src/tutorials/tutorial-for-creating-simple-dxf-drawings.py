@@ -7,4 +7,4 @@ doc = ezdxf.new('R2010')
 msp = doc.modelspace()
 # Add a LINE entity
 msp.add_line((0, 0), (10, 0))
-doc.saveas("../output/line.dxf")
+doc.saveas("output/line.dxf")

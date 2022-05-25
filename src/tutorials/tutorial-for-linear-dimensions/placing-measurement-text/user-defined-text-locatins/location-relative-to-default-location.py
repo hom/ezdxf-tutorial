@@ -11,4 +11,4 @@ dim1 = msp.add_linear_dim(base=(7, 2), p1=(7, 0), p2=(10, 0))
 dim1.set_text_align(halign="center")
 dim1.render()
 
-doc.saveas('../../../../../output/location_relative_to_default_location.dxf')
+doc.saveas('output/location_relative_to_default_location.dxf')

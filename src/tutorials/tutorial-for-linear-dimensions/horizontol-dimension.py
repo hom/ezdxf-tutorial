@@ -31,4 +31,4 @@ dim2 = msp.add_linear_dim(
 dim1.render()
 dim2.render()
 
-doc.saveas("../../../output/dim_linear_horiz.dxf")
+doc.saveas("output/dim_linear_horiz.dxf")

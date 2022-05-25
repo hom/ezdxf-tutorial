@@ -63,4 +63,4 @@ ATTRIBS = {
 editor = MTextEditor(text + NP)
 mtext = msp.add_mtext(str(editor), dxfattribs={'style': 'TimeNewRomanRegular'})
 
-doc.saveas('../output/mtext.dxf')
+doc.saveas('output/mtext.dxf')

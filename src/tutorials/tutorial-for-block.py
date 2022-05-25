@@ -32,4 +32,4 @@ for point in placing_points:
     })
 
 # Save the drawing.
-doc.saveas("../output/blockref_tutorial.dxf")
+doc.saveas("output/blockref_tutorial.dxf")

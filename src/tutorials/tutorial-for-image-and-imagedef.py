@@ -31,4 +31,4 @@ msp.add_image(
 # Get existing image definitions from the OBJECTS section:
 image_defs = doc.objects.query('IMAGEDEF')
 
-doc.saveas('../output/dxf_with_cat.dxf')
+doc.saveas('output/dxf_with_cat.dxf')

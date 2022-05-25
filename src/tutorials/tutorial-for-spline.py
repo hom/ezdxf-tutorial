@@ -10,4 +10,4 @@ msp.add_spline_control_frame(fit_points, method='uniform', dxfattribs={'color': 
 msp.add_spline_control_frame(fit_points, method='chord', dxfattribs={'color': 3})
 msp.add_spline_control_frame(fit_points, method='centripetal', dxfattribs={'color': 5})
 
-doc.saveas('../output/spline.dxf')
+doc.saveas('output/spline.dxf')

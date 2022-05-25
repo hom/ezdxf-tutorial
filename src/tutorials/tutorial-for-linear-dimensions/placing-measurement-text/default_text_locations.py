@@ -37,4 +37,4 @@ dim.set_text_align(halign="center", valign="center")
 dim.render()
 
 
-doc.saveas('../../../../output/default_text_locations.dxf')
+doc.saveas('output/default_text_locations.dxf')

@@ -33,7 +33,7 @@ with mesh.edit_data() as mesh_data:
     mesh_data.vertices = cube_vertices
     mesh_data.faces = cube_faces
 
-doc.saveas("../output/cube_mesh_1.dxf")
+doc.saveas("output/cube_mesh_1.dxf")
 '''
 
 import ezdxf
@@ -66,4 +66,4 @@ with mesh.edit_data() as mesh_data:
     # optional call optimize(): minimizes the vertex count
     mesh_data.optimize()
 
-doc.saveas("../output/cube_mesh_2.dxf")
+doc.saveas("output/cube_mesh_2.dxf")

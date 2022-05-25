@@ -151,4 +151,4 @@ hatch.associate(path, [lwpolyline])
 
 hatch.set_pattern_fill("ANSI33", scale=0.5)
 
-doc.saveas('../output/solid_hatch_polyline_path.dxf')
+doc.saveas('output/solid_hatch_polyline_path.dxf')

@@ -18,4 +18,4 @@ msp.add_linear_dim(
     }
 ).render()
 
-doc.saveas('../../../../../output/text_properties.dxf')
+doc.saveas('output/text_properties.dxf')

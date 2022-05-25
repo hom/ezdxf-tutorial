@@ -10,4 +10,4 @@ msp.add_linear_dim(
     base=(3, 1), p1=(3, 0), p2=(6, 0), location=(3, 1)
 ).render()
 
-doc.saveas('../../../../../output/location_relative_to_origin.dxf')
+doc.saveas('output/location_relative_to_origin.dxf')

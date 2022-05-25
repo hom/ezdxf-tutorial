@@ -11,4 +11,4 @@ msp.add_text('Text Style Example: Liberation Serif',
                  'height': 0.35
              }).set_pos((2, 6), align='LEFT')
 
-doc.saveas('../output/simple_text.dxf')
+doc.saveas('output/simple_text.dxf')
