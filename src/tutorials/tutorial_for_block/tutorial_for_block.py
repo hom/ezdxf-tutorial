@@ -8,7 +8,8 @@ def get_random_point():
     y = random.randint(-100, 100)
     return x, y
 
-doc = ezdxf.new('R2010')
+
+doc = ezdxf.new('R2018', setup=True)
 
 flag = doc.blocks.new(name='FLAG')
 
@@ -25,11 +26,13 @@ for point in placing_points:
     # Every flag has a different scaling and a rotation of -15 deg.
     random_scale = 0.5 + random.random() * 2.0
     # Add a block reference to the block named 'FLAG' at the coordinates 'point'.
-    msp.add_blockref('FLAG', point, dxfattribs={
-        'xscale': random_scale,
-        'yscale': random_scale,
-        'rotation': -15
-    })
+    msp.add_blockref('FLAG',
+                     point,
+                     dxfattribs={
+                         'xscale': random_scale,
+                         'yscale': random_scale,
+                         'rotation': -15
+                     })
 
 # Save the drawing.
 doc.saveas("output/blockref_tutorial.dxf")
