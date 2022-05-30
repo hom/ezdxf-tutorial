@@ -34,5 +34,7 @@ for point in placing_points:
                          'rotation': -15
                      })
 
+for flag_ref in msp.query('INSERT[name=="FLAG"]'):
+    print(str(flag_ref))
 # Save the drawing.
-doc.saveas("output/blockref_tutorial.dxf")
+# doc.saveas("output/blockref_tutorial.dxf")
