@@ -71,9 +71,19 @@ msp.add_line((0, 0), (0, 20))
 doc.saveas("output/lwpolyline7.dxf")
 '''
 
+'''
 doc = ezdxf.new('R2018', setup=True, units=ezdxf.units.MM)
 msp = doc.modelspace()
 
 msp.add_lwpolyline([(0, 0, 1), (0, 10, 1), (0, 0, 0)], close=True, format="xyb", dxfattribs={"const_width": 0.4})
 
 doc.saveas("output/lwpolyline8.dxf")
+'''
+
+doc = ezdxf.new('R2018', setup=True, units=ezdxf.units.MM)
+msp = doc.modelspace()
+
+circle = msp.add_circle(center=(0, 0), radius=10, dxfattribs={"color": ezdxf.const.GREEN})
+circle.to_spline()
+
+doc.saveas("output/lwpolyline9.dxf")
