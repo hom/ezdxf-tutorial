@@ -53,6 +53,7 @@ doc.saveas("output/lwpolyline6.dxf")
 '''
 
 # lwpolyline 7
+'''
 doc = ezdxf.new('R2018', setup=True, units=ezdxf.units.MM)
 msp = doc.modelspace()
 msp.add_lwpolyline([(0.3111, 0, -0.7627), (-3.7404, 0, 0.7627),
@@ -68,3 +69,11 @@ msp.add_lwpolyline([(0, 10, -0.7627), (-4.0515, 10, 0.7627),
 msp.add_line((0, 0), (0, 20))
 
 doc.saveas("output/lwpolyline7.dxf")
+'''
+
+doc = ezdxf.new('R2018', setup=True, units=ezdxf.units.MM)
+msp = doc.modelspace()
+
+msp.add_lwpolyline([(0, 0, 1), (0, 10, 1), (0, 0, 0)], close=True, format="xyb", dxfattribs={"const_width": 0.4})
+
+doc.saveas("output/lwpolyline8.dxf")

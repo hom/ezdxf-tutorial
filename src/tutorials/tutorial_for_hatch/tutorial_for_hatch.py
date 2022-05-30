@@ -131,6 +131,7 @@ edge_path.add_line(
 )
 '''
 
+'''
 # Create base geometry
 lwpolyline = msp.add_lwpolyline(
     [(0, 0, 0), (10, 0, 0.5), (10, 10, 0), (0, 10, 0)],
@@ -150,5 +151,6 @@ path = hatch.paths.add_polyline_path(
 hatch.associate(path, [lwpolyline])
 
 hatch.set_pattern_fill("ANSI33", scale=0.5)
+'''
 
 doc.saveas('output/solid_hatch_polyline_path.dxf')
